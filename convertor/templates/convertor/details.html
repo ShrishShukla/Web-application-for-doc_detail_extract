@@ -1,0 +1,18 @@
+    {% extends 'convertor/create.html' %}
+    {% block replace %}
+    <CENTER>
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome <br>Hello {{ user_pr.fname }}</h1>
+      <p class="lead">hope it is rightly processed</p>
+      <hr class="my-4">
+      
+      <p>
+        {{ user_pr.display_picture.url }}<BR>
+       Your tech stack has  {{ user_pr.technologies }}</p>
+       <a href="{{ user_pr.display_picture.url }}">click here to open</a>
+       {% load static %}
+       
+       <a href= "http://127.0.0.1:8000/media/result.csv">click here to open</a>
+    </div>
+    </CENTER>
+    {% endblock %}
