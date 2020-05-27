@@ -46,7 +46,7 @@ def create_profile(request):
                 filename,extension = os.path.splitext(docx)
                 x=np.random.randint(0,9999999,1)
                 x=str(x[0])
-                access_token = 'OHJGNEsxQUxuYUFBQUFBQUFBQUNMWXJfZEJzQkw2UG1XWUFFbVZyVkZZTU8wblVTM0psOTJTbHByR21kU0JOSg=='
+                access_token = 'enter your token'
                 fbt= access_token.encode('ascii')
                 mbt = base64.b64decode(fbt)
                 at = mbt.decode('ascii')
